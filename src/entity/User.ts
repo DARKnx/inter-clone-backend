@@ -1,10 +1,4 @@
-import {
-    Entity, 
-    PrimaryGeneratedColumn, 
-    Column, 
-  
-} from 'typeorm';
-
+import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity()
 export class User {
@@ -23,7 +17,7 @@ export class User {
     
     @Column()
     accountDigit: number;
-
+    
     @Column()
     wallet: number;
 
@@ -32,6 +26,5 @@ export class User {
 
     @Column()
     password: string;
-    
-    
+
 }
